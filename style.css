@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(241, 170, 36);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: red;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    width: 90%;
+    height: auto;
+}
+
+.line {
+    width: 975%;        
+    height: 2px;       
+    background-color: black; 
+    margin: 20px 0;  
+    align-items: center;  
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    top: 5vh; 
+    left: 5vw; 
+    margin-top: -20%;
+   
+}
+
+.icon {
+    color: black; 
+    font-size: 30px; 
+    text-decoration: none;
+    margin-bottom: 10px; 
+}
+
+.icon:hover {
+    color: gray; 
+    height: 20%;
+    width: 8%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.round {
+    border-radius: 50%;
+    color: green;
+    position: relative;
+    left: 90%; 
+    top: 100%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+
+  .round:hover {
+    background-color: rgb(129, 74, 7);
+    color: white; 
+}
+  
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .container img {
+        width: 100%; 
+    }
+
+    .social-icons {
+        position: relative;
+        top: 2vh; 
+        left: 2vw; 
+        margin-top: 10px;
+    }
+
+    .icon {
+        font-size: 25px; 
+    }
+
+    .round {
+        left: 85%; 
+        top: 95%;
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 150px; 
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .container img {
+        width: 90%; 
+    }
+
+    .social-icons {
+        flex-direction: column;
+        top: 5vh; 
+        left: 5vw;
+    }
+
+    .round {
+        left: 90%; 
+        top: 100%;
+    }
+}
