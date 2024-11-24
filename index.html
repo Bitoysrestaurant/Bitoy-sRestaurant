@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-87">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bitoy's Restaurant </title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <div class="banner">
+       
+    <header>
+            <a href="index.html"><img src="pictures/bitoys.png" class="logo"></a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    </header>
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <section class="home" id="home">
+
+        <div class="home-slider">
+            
+            <div class="wrapper">
+
+                <div class="slide">
+                    <div class="content">
+                        <span>Your Favorite Restaurant</span>
+                        <b>Bitoy's Restaurant is a beach-front restaurant specializing in seafood and grilled specialties.</b>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="dishes" id="dishes">
+        <div class="menu-header">
+            <h1>Check Out Our Menu!</h1>
+            <p>Monday-Sunday | 6am - 11am</p>
+        </div>
+    
+        <div class="menu-container">
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('BM')">
+                <img src="pictures/BM.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('menu1')">
+                <img src="pictures/menu1.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('menu2')">
+                <img src="pictures/menu2.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('5')">
+                <img src="pictures/5.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('6')">
+                <img src="pictures/6.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('7')">
+                <img src="pictures/7.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('8')">
+                <img src="pictures/8.jpg" alt="">
+            </a>
+        </div>
+    
+        <div id="modal" class="modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    </section>
+     
+
+    <section class="gallery"></section>
+
+        <h1>Gallery</h1>
+
+  <div class="gallery">
+
+    <a href="#img1"><img src="pictures/img1.jpg" alt="Gallery Image 1"></a>
+    <a href="#img2"><img src="pictures/img2.jpg" alt="Gallery Image 2"></a>
+    <a href="#img3"><img src="pictures/img3.jpg" alt="Gallery Image 3"></a>
+    <a href="#img4"><img src="pictures/img4.jpg" alt="Gallery Image 4"></a>
+    <a href="#img5"><img src="pictures/img4.jpg" alt="Gallery Image 5"></a>
+    <a href="#img6"><img src="pictures/img1.jpg" alt="Gallery Image 6"></a>
+    <a href="#img7"><img src="pictures/img5.jpg" alt="Gallery Image 7"></a>
+    <a href="#img8"><img src="pictures/img6.jpg" alt="Gallery Image 8"></a>
+  </div>
+
+  
+  <div id="img1" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img1.jpg" alt="Gallery Image 1">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img2.jpg" alt="Gallery Image 2">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img3.jpg" alt="Gallery Image 3">
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img4.jpg" alt="Gallery Image 4">
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img4.jpg" alt="Gallery Image 5">
+  </div>
+  <div id="img6" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img1.jpg" alt="Gallery Image 6">
+  </div>    
+  <div id="img7" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img5.jpg" alt="Gallery Image 7">
+  </div>    
+  <div id="img8" class="lightbox">
+    <a href="" class="close">&times;</a>
+    <img src="pictures/img6.jpg" alt="Gallery Image 8">
+  </div>    
+
+  
+    <section class="about" id="about">
+        <h3 class="sub-heading"> about </h3>
+        <h1 class="heading"> Why Choose Us? </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="pictures/bitoys.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3> Best Barbequehan in Roxas </h3>
+                <p>At Bitoy's Restaurant, we're more than just a barbecue joint – we’re a community of flavor lovers, fire enthusiasts, and storytellers, brought together by the art of slow-cooked perfection. Located in o, our restaurant is where tradition meets innovation, and every bite tells a story. </p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Walk-In </span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-peso-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn More.</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                </div>
+            </div>
+            <h3>Location</h3>
+            <a href="#">Baybay, Roxas City</a>
+        </div>
+
+        <div class="row">
+            <div class="footer-col">
+            </div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+
+        <div class="row">
+            <div class="footer-col">
+            </div>
+            <h3>Contact Info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">+111-222-3333</a>
+            <a href="#">bitoysrestaurant@gmail.com</a>
+        </div>
+
+        <div class="row"></div>
+        <div class="footer-col">
+        </div>
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="credit">Copyright @ 2024 by <span>Reyven Del Rosario</span></div>
+    </section>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
