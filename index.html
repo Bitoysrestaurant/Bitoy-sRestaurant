@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Bitoy's Restaurant </title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
@@ -15,45 +17,35 @@
     <div class="banner">
        
     <header>
-            <a href="index.html"><img src="bitoys.png" class="logo"></a>
+            <a href="index.html"><img src="pictures/bitoys.png" class="logo"></a>
 
         <nav class="navbar">
-            <a class="active" href="#home">Home</a>
+            <a href="#home">Home</a>
             <a href="#dishes">Dishes</a>
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
         </nav>
 
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
         </div>
     </header>
 
     <form action="" id="search-form">
-        <input type="search" placeholder="search here..." id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
-        <i class="fas fa-times" id="close"></i>
     </form>
 
-    <section class="home" id="home">
-
-        <div class="home-slider">
-            
-            <div class="wrapper">
-
-                <div class="slide">
-                    <div class="content">
-                        <span>Your Favorite Restaurant</span>
-                        <b>Bitoy's Restaurant is a beach-front restaurant specializing in seafood and grilled specialties.</b>
-                        <a href="#" class="btn">Order Now</a>
-                    </div>
-                    <div class="image">
-                        <img src="" alt="">
-                    </div>
+    <section class="hero-section" id="home">
+        <div class="section-content">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title"> Best Barbequehan</h2>
+                    <h3 class="subtitle"> Fire up your craving's at Bitoy's</h3>
+                    <p class="description"> Where smoky flavors meet sizzling perfection!</p>
                 </div>
-
+            <div class="hero-image-wrapper">
+                <img src="pictures/bebeque.png" alt="Hero"
+                class="hero-image">
             </div>
         </div>
     </section>
@@ -65,26 +57,23 @@
         </div>
     
         <div class="menu-container">
-            <a href="javascript:void(0)" class="menu-item" onclick="openModal('BM')">
-                <img src="BM.jpg" alt="">
-            </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('menu1')">
-                <img src="menu1.jpg" alt="">
+                <img src="pictures/menu1.jpg" alt="">
             </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('menu2')">
-                <img src="menu2.jpg" alt="">
+                <img src="pictures/menu2.jpg" alt="">
             </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('5')">
-                <img src="5.jpg" alt="">
+                <img src="pictures/5.jpg" alt="">
             </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('6')">
-                <img src="6.jpg" alt="">
+                <img src="pictures/6.jpg" alt="">
             </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('7')">
-                <img src="7.jpg" alt="">
+                <img src="pictures/7.jpg" alt="">
             </a>
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('8')">
-                <img src="8.jpg" alt="">
+                <img src="pictures/8.jpg" alt="">
             </a>
         </div>
     
@@ -96,55 +85,85 @@
     </section>
      
 
-    <section class="gallery"></section>
-
-        <h1>Gallery</h1>
-
-  <div class="gallery">
-
-    <a href="#img1"><img src="img1.jpg" alt="Gallery Image 1"></a>
-    <a href="#img2"><img src="img2.jpg" alt="Gallery Image 2"></a>
-    <a href="#img3"><img src="img3.jpg" alt="Gallery Image 3"></a>
-    <a href="#img4"><img src="img4.jpg" alt="Gallery Image 4"></a>
-    <a href="#img5"><img src="img4.jpg" alt="Gallery Image 5"></a>
-    <a href="#img6"><img src="img1.jpg" alt="Gallery Image 6"></a>
-    <a href="#img7"><img src="img5.jpg" alt="Gallery Image 7"></a>
-    <a href="#img8"><img src="img6.jpg" alt="Gallery Image 8"></a>
-  </div>
-
-  
-  <div id="img1" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img1.jpg" alt="Gallery Image 1">
-  </div>
-  <div id="img2" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img2.jpg" alt="Gallery Image 2">
-  </div>
-  <div id="img3" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img3.jpg" alt="Gallery Image 3">
-  </div>
-  <div id="img4" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img4.jpg" alt="Gallery Image 4">
-  </div>
-  <div id="img5" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img4.jpg" alt="Gallery Image 5">
-  </div>
-  <div id="img6" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img1.jpg" alt="Gallery Image 6">
-  </div>    
-  <div id="img7" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img5.jpg" alt="Gallery Image 7">
-  </div>    
-  <div id="img8" class="lightbox">
-    <a href="" class="close">&times;</a>
-    <img src="img6.jpg" alt="Gallery Image 8">
-  </div>    
+    <section class="gallery" id="gallery">
+        <h1 class="heading">Gallery</h1>
+    
+        <div class="gallery-grid">
+            <a href="#img1" class="gallery-item"><img src="pictures/a.jpg" alt="Gallery Image 1"></a>
+            <a href="#img2" class="gallery-item"><img src="pictures/b.jpg" alt="Gallery Image 2"></a>
+            <a href="#img3" class="gallery-item"><img src="pictures/c.jpg" alt="Gallery Image 3"></a>
+            <a href="#img4" class="gallery-item"><img src="pictures/d.jpg" alt="Gallery Image 4"></a>
+            <a href="#img5" class="gallery-item"><img src="pictures/e.jpg" alt="Gallery Image 5"></a>
+            <a href="#img6" class="gallery-item"><img src="pictures/f.jpg" alt="Gallery Image 6"></a>
+            <a href="#img7" class="gallery-item"><img src="pictures/g.jpg" alt="Gallery Image 7"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/h.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/i.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/j.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/k.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/L.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/m.jpg" alt="Gallery Image 8"></a>
+            <a href="#img8" class="gallery-item"><img src="pictures/n.jpg" alt="Gallery Image 8"></a>
+        </div>
+    
+        <!-- Lightbox -->
+        <div id="img1" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/a.jpg" alt="Gallery Image 1">
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/b.jpg" alt="Gallery Image 2">
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/c.jpg" alt="Gallery Image 3">
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/d.jpg" alt="Gallery Image 4">
+        </div>
+        <div id="img5" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/e.jpg" alt="Gallery Image 5">
+        </div>
+        <div id="img6" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/f.jpg" alt="Gallery Image 6">
+        </div>
+        <div id="img7" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/g.jpg" alt="Gallery Image 7">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/h.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/i.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/j.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/k.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/L.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/m.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#gallery" class="close">&times;</a>
+            <img src="pictures/n.jpg" alt="Gallery Image 8">
+        </div>
+    </section>
+    
 
   
     <section class="about" id="about">
@@ -152,13 +171,11 @@
         <h1 class="heading"> Why Choose Us? </h1>
 
         <div class="row">
-            <div class="image">
-                <img src="bitoys.png" alt="">
-            </div>
 
             <div class="content">
                 <h3> Best Barbequehan in Roxas </h3>
-                <p>At Bitoy's Restaurant, we're more than just a barbecue joint – we’re a community of flavor lovers, fire enthusiasts, and storytellers, brought together by the art of slow-cooked perfection. Located in o, our restaurant is where tradition meets innovation, and every bite tells a story. </p>
+                <p>Bitoy's Balay Barbekyuhan, located along Baybay Beach in Roxas City, Philippines, has a rich history spanning over five decades. Established in the 1960s, it began as a modest eatery and has since evolved into a beloved dining destination known for its exceptional barbecue and seafood offerings. 
+                </p>
                 <div class="icons-container">
                     <div class="icons">
                         <i class="fas fa-shipping-fast"></i>
@@ -166,61 +183,71 @@
                     </div>
                     <div class="icons">
                         <i class="fas fa-peso-sign"></i>
-                        <span>easy payments</span>
+                        <span>easy reservation</span>
                     </div>
                     <div class="icons">
                         <i class="fas fa-headset"></i>
-                        <span>24/7 service</span>
+                        <span>Good service</span>
                     </div>
                 </div>
-                <a href="#" class="btn">Learn More.</a>
-        </div>
+            </div>
     </section>
 
-    <footer class="footer">
 
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                </div>
-            </div>
-            <h3>Location</h3>
-            <a href="#">Baybay, Roxas City</a>
+ <!-- Review Section -->
+    <section class="review-section" id="reviews">
+        <div class="review-view">
+        <h1> Here's What Our Customer Says </h1>
+        </div>
+        <div class="review-container">
+            <!-- Review Images -->
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('1')">
+                <img src="pictures/1.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('2')">
+                <img src="pictures/2.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('3')">
+                <img src="pictures/3.jpg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="menu-item" onclick="openModal('4')">
+                <img src="pictures/4.jpg" alt="">
+            </a>
         </div>
 
-        <div class="row">
-            <div class="footer-col">
-            </div>
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#dishes">Dishes</a>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
+         <div id="modal" class="modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
         </div>
-
-        <div class="row">
-            <div class="footer-col">
-            </div>
-            <h3>Contact Info</h3>
-            <a href="#">+123-456-7890</a>
-            <a href="#">+111-222-3333</a>
-            <a href="#">bitoysrestaurant@gmail.com</a>
-        </div>
-
-        <div class="row"></div>
-        <div class="footer-col">
-        </div>
-            <h3>Follow Us</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
-
-        <div class="credit">Copyright @ 2024 by <span>Reyven Del Rosario</span></div>
-    </section>
     
+    </section>
+   
+    <footer class="footer-section">
+        <div class="section-content">
+            <!-- Developer Credit -->
+            <p class="copyright-text"> 
+                &copy; 2025 | Designed by <strong>Reyven Del Rosario</strong>
+            </p>
+    
+            <!-- Social Links -->
+            <div class="social-link-list">
+                <a href="https://web.facebook.com/profile.php?id=100089856457110" class="social-link" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+    
+            <!-- Policy Links -->
+            <div class="policy-text">
+                Call Us: 09620520840 | All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
+   
 </body>
 </html>

@@ -30,7 +30,7 @@ function openModal(imageName) {
     const captionText = document.getElementById("caption");
     
     modal.style.display = "block";
-    modalImg.src = `${imageName}.jpg`;
+    modalImg.src = `pictures/${imageName}.jpg`;
     captionText.innerHTML = imageName; // You can change this to a more descriptive text if needed
 }
 
