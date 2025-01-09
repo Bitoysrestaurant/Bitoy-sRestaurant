@@ -8,7 +8,6 @@
 
         <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon">
 
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -218,6 +217,15 @@
             <a href="javascript:void(0)" class="menu-item" onclick="openModal('4')">
                 <img src="pictures/4.jpg" alt="">
             </a>
+
+            <form action="https://formspree.io/f/mlddaezd" method="POST">
+                <h1> Leave a Review </h1>
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+                <textarea rows="5" cols="60" name="message" placeholder="Write your review..." autocomplete="off" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
          <div id="modal" class="modal">
